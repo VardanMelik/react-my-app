@@ -7,7 +7,17 @@ import React from 'react'
 // ES6 writing
 const Greet = (props) => {
   console.log(props)
-  return <h1>Hello ES {props.name}</h1>
+
+  // ReadOnly property you can't change
+  //props.name = 'Vardan'
+  return (
+    <div>
+      <h1>
+        Hello ES {props.name} a.k.a. {props.heroName}
+      </h1>
+      {props.children}
+    </div>
+)
 }
 
 export default Greet
