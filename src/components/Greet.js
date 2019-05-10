@@ -5,17 +5,17 @@ import React from 'react'
 }
 */
 // ES6 writing
-const Greet = (props) => {
-  console.log(props)
+const Greet = props => {
+  const {name, heroName} = props
+  //console.log(props)
 
   // ReadOnly property you can't change
   //props.name = 'Vardan'
   return (
     <div>
       <h1>
-        Hello ES {props.name} a.k.a. {props.heroName}
+        Hello ES {name} a.k.a. {heroName}
       </h1>
-      {props.children}
     </div>
 )
 }

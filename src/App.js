@@ -4,16 +4,16 @@ import './App.css';
 import Greet from './components/Greet'
 import Welcome from './components/Welcome'
 import Hello from './components/Hello'
+import Eyemotion from './components/Eyemotion'
+import Message from './components/Message'
+import Counter from './components/Counter'
 
 class App extends React.Component {
     render() {
         return (
-          <div className = "App"> {
-                /*<Greet />
+          <div className = "App">
 
-                        <Hello />*/
-            }
-            <Greet name="Bruce" heroName="Batman" >
+          {/*  <Greet name="Bruce" heroName="Batman" >
               <p>This is children props</p>
             </Greet>
             <Greet name="Clark" heroName="Superman">
@@ -22,9 +22,16 @@ class App extends React.Component {
             <Greet name="Clark" heroName="Superman" />
             <Greet name="Diana" heroName="Wonder Woman"/>
 
+
+            <Welcome name="Clark" heroName="Superman"/>
+            <Welcome name="Clark" heroName="Superman"/>
+            <Message />
+            <Eyemotion />
+            <Counter />
+            */}
+            <Greet />
+            <Welcome />
             <Welcome name="Diana" heroName="Wonder Woman"/>
-            <Welcome name="Clark" heroName="Superman"/>
-            <Welcome name="Clark" heroName="Superman"/>
             </div>
         );
     }
