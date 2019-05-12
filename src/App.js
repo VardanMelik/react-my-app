@@ -7,11 +7,17 @@ import Hello from './components/Hello'
 import Eyemotion from './components/Eyemotion'
 import Message from './components/Message'
 import Counter from './components/Counter'
+import FunctionClick from './components/FunctionClick'
+import ClassClick from './components/ClassClick'
+import EventBind from './components/EventBind'
+import ParentComponent from './components/ParentComponent'
+import UserGreeting from './components/UserGreeting'
+import NameList from './components/NameList'
 
 class App extends React.Component {
     render() {
         return (
-          <div className = "App">
+          <div className="App">
 
           {/*  <Greet name="Bruce" heroName="Batman" >
               <p>This is children props</p>
@@ -28,11 +34,19 @@ class App extends React.Component {
             <Message />
             <Eyemotion />
             <Counter />
-            */}
             <Greet />
             <Welcome />
             <Welcome name="Diana" heroName="Wonder Woman"/>
-            </div>
+            <ClassClick />
+            <FunctionClick />
+            <EventBind />
+            <ParentComponent />
+            <UserGreeting />
+
+
+            */}
+            <NameList />
+          </div>
         );
     }
 }
