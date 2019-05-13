@@ -16,6 +16,7 @@ import NameList from './components/NameList'
 import StyleSheet from './components/StyleSheet'
 import './appStyles.css'
 import styles from './appStyle.module.css'
+import Form from './components/Form'
 
 
 class App extends React.Component {
@@ -53,7 +54,7 @@ class App extends React.Component {
             <h1 className= {styles.success}>Success</h1>
             <Inline />
             */}
-
+            <Form />
           </div>
         );
     }
