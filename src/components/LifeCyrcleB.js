@@ -1,29 +1,51 @@
+/* Mounting Methods
+  constructor
+  getDerivedStateFromProps
+  componentDidMount
+
+*/
+
 import React, { Component } from 'react'
 
-class LifeCycleB extends Component {
+
+class LifeCyrcleB extends Component {
   constructor() {
     super()
     this.state = {
       name: 'React'
     }
-    console.log('LifeCycleB constructor')
+    console.log('LifeCyrcleB constructor')
   }
 
   static getDerivedStateFromProps(props, state) {
-    console.log('LifeCycleB getDeriveStateFromProps')
+    console.log('LifeCyrcleB getDeriveStateFromProps')
     return null
   }
 
   componentDidMount() {
-    console.log('LifeCycleB componentDidMount')
+    console.log('LifeCyrcleA componentDidMount')
   }
+  shouldCompanentUpdate() {
+    console.log('LifeCyrcleA shouldComponentUpdate')
+    return true
+  }
+  getSnapshotBeforeUpdate(prevProps, prevState) {
+    console.log('LifeCyrcleA getSnapshotBeforeUpdate')
+    return null
+  }
+  componentDidUpdate() {
+    console.log('LifeCyrcleA componentDidUpdate')
+  }
+
+
 
   render() {
     return (
       <div>
-        <h1>LifeCycleB</h1>
+        <h1>LifeCyrcleB</h1>
+
       </div>
     )
   }
 }
-export default LifeCycleB
+export default LifeCyrcleB
