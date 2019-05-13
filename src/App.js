@@ -19,6 +19,8 @@ import styles from './appStyle.module.css'
 import Form from './components/Form'
 import LifeCycleA from './components/LifeCycleA'
 import LifeCyrcleB from './components/LifeCyrcleB'
+import Fragment from './components/Fragment'
+import Table from './components/Table'
 
 
 class App extends React.Component {
@@ -54,11 +56,14 @@ class App extends React.Component {
             <StyleSheet primary={true}/>
             <h1 className="error">Error</h1>
             <h1 className= {styles.success}>Success</h1>
-<Form />
+            <Form />
+            <LifeCycleA />
+          <Fragment />
+
             <Inline />
             */}
+            <Table />
 
-            <LifeCycleA />
           </div>
         );
     }
