@@ -17,6 +17,8 @@ import StyleSheet from './components/StyleSheet'
 import './appStyles.css'
 import styles from './appStyle.module.css'
 import Form from './components/Form'
+import LifeCycleA from './components/LifeCycleA'
+import LifeCyrcleB from './components/LifeCyrcleB'
 
 
 class App extends React.Component {
@@ -52,9 +54,11 @@ class App extends React.Component {
             <StyleSheet primary={true}/>
             <h1 className="error">Error</h1>
             <h1 className= {styles.success}>Success</h1>
+<Form />
             <Inline />
             */}
-            <Form />
+
+            <LifeCycleA />
           </div>
         );
     }
