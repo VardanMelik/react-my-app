@@ -27,6 +27,7 @@ import RefsDemo from './components/RefsDemo'
 import Input from './components/Input'
 import FocusInput from './components/FocusInput'
 import FRParentInput from './components/FRParentInput'
+import PortalDemo from './components/PortalDemo'
 
 class App extends React.Component {
     render() {
@@ -71,11 +72,12 @@ class App extends React.Component {
 
                             <RefsDemo />
                             < FocusInput />
+                            <FRParentInput />
 
                             <Inline />
                             */
             }
-            <FRParentInput />
+            <PortalDemo />
             </div>
         );
     }
