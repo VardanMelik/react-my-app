@@ -21,64 +21,61 @@ import LifeCycleA from './components/LifeCycleA'
 import LifeCyrcleB from './components/LifeCyrcleB'
 import Fragment from './components/Fragment'
 import Table from './components/Table'
-
+import PureComp from './components/PureComponent'
+import RegComp from './components/RegComponent'
+import RefsDemo from './components/RefsDemo'
+import Input from './components/Input'
+import FocusInput from './components/FocusInput'
 
 class App extends React.Component {
     render() {
-        return (
-          <div className="App">
+        return ( <div className="App">
 
-          {/*  <Greet name="Bruce" heroName="Batman" >
-              <p>This is children props</p>
-            </Greet>
-            <Greet name="Clark" heroName="Superman">
-              <button>Action</button>
-            </Greet>
-            <Greet name="Clark" heroName="Superman" />
-            <Greet name="Diana" heroName="Wonder Woman"/>
+            {
+                /*  <Greet name="Bruce" heroName="Batman" >
+                              <p>This is children props</p>
+                            </Greet>
+                            <Greet name="Clark" heroName="Superman">
+                              <button>Action</button>
+                            </Greet>
+                            <Greet name="Clark" heroName="Superman" />
+                            <Greet name="Diana" heroName="Wonder Woman"/>
 
 
-            <Welcome name="Clark" heroName="Superman"/>
-            <Welcome name="Clark" heroName="Superman"/>
-            <Message />
-            <Eyemotion />
-            <Counter />
-            <Greet />
-            <Welcome />
-            <Welcome name="Diana" heroName="Wonder Woman"/>
-            <ClassClick />
-            <FunctionClick />
-            <EventBind />
-            <ParentComponent />
-            <UserGreeting />
+                            <Welcome name="Clark" heroName="Superman"/>
+                            <Welcome name="Clark" heroName="Superman"/>
+                            <Message />
+                            <Eyemotion />
+                            <Counter />
+                            <Greet />
+                            <Welcome />
+                            <Welcome name="Diana" heroName="Wonder Woman"/>
+                            <ClassClick />
+                            <FunctionClick />
+                            <EventBind />
+                            <ParentComponent />
+                            <UserGreeting />
 
-            <NameList />
-            <StyleSheet primary={true}/>
-            <h1 className="error">Error</h1>
-            <h1 className= {styles.success}>Success</h1>
-            <Form />
-            <LifeCycleA />
-          <Fragment />
+                            <NameList />
+                            <StyleSheet primary={true}/>
+                            <h1 className="error">Error</h1>
+                            <h1 className= {styles.success}>Success</h1>
+                            <Form />
+                            <LifeCycleA />
+                          <Fragment />
+                          <Table />
+                          <PureComp />
+                          <RegComp />
+                <RefsDemo />
 
-            <Inline />
-            */}
-            <Table />
+                            <RefsDemo />
 
-          </div>
+                            <Inline />
+                            */
+            }
+            < FocusInput />
+            </div>
         );
     }
 }
 export default App;
-
-/*function App() {
-    return ( <div className = "App">
-        <header className ="App-header">
-        <img src = { logo } className = "App-logo" alt= "logo"/>
-        <p> React App <br /> Stateless Functional component </p><a className = "App-link"
-        href = "https://reactjs.org" target = "_blank"
-        rel = "noopener noreferrer">
-        Learn React </a></header></div>
-    );
-}
-
-export default App;*/
