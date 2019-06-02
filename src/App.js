@@ -26,6 +26,7 @@ import RegComp from './components/RegComponent'
 import RefsDemo from './components/RefsDemo'
 import Input from './components/Input'
 import FocusInput from './components/FocusInput'
+import FRParentInput from './components/FRParentInput'
 
 class App extends React.Component {
     render() {
@@ -69,11 +70,12 @@ class App extends React.Component {
                 <RefsDemo />
 
                             <RefsDemo />
+                            < FocusInput />
 
                             <Inline />
                             */
             }
-            < FocusInput />
+            <FRParentInput />
             </div>
         );
     }
